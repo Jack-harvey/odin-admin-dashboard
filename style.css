@@ -1,0 +1,84 @@
+@import "modern-normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Manrope:700|Manrope:400");
+
+:root {
+  --text: #101214;
+  --background: #f5f9fa;
+  --primary: #4088bf;
+  --secondary: #90c3ea;
+  --accent: #45a7f2;
+}
+
+:root:has(#theme:checked) {
+  --text: #ebedef;
+  --background: #05090a;
+  --primary: #4088bf;
+  --secondary: #15486f;
+  --accent: #0d6fba;
+}
+
+body {
+  font-family: "Manrope";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Manrope";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background);
+  color: var(--text);
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  grid-template-rows: 17rem 1fr;
+}
+
+nav {
+  background-color: antiquewhite;
+  grid-row: 1 / span 2;
+}
+
+header {
+  background-color: sandybrown;
+  grid-area: 1 /2 / 1 / -1;
+}
+
+main {
+  background-color: powderblue;
+  grid-area: 2/2/-1/-1;
+}
