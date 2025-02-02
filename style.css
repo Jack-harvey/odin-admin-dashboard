@@ -69,8 +69,40 @@ body {
 }
 
 nav {
-  background-color: antiquewhite;
+  background-color: var(--primary);
+  color: var(--background);
   grid-row: 1 / span 2;
+  display: grid;
+  grid-template-rows: 5rem 26rem 1fr;
+  gap: 4rem;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  svg {
+    max-width: 5rem;
+  }
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+
+  a {
+    text-decoration: none;
+    position: relative;
+    bottom: 2px;
+    color: var(--text);
+  }
+  > svg {
+    max-width: 2rem;
+    margin-right: 1rem;
+  }
 }
 
 header {
