@@ -7,6 +7,7 @@
   --primary: #4088bf;
   --secondary: #90c3ea;
   --accent: #45a7f2;
+  --status-demo: rgb(109, 0, 199);
 }
 
 :root:has(#theme:checked) {
@@ -210,21 +211,35 @@ main {
 
 .projects {
   grid-area: 1/1/3/2;
+  margin: 1.5rem 0rem 3rem 1.5rem;
+  > p {
+    font-size: 1.3rem;
+    font-weight: 1000;
+  }
 }
 
-.projects > .card {
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.card-area > .card {
   max-width: 25rem;
   height: 15rem;
-  background-color: burlywood;
+  background-color: var(--secondary);
   border: none;
   border-radius: 7px;
   display: grid;
-  grid-template-columns: 6px 1fr;
+  grid-template-columns: 7px 1fr;
   grid-template-rows: 1fr 8rem 1fr;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   .status-color {
     grid-row: 1/4;
-    background-color: greenyellow;
+    background-color: var(--status-demo);
+    border-radius: 7px 0px 0px 7px;
   }
   .card-title {
     font-weight: bold;
