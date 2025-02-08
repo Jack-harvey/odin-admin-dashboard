@@ -8,6 +8,7 @@
   --secondary: #90c3ea;
   --accent: #45a7f2;
   --status-demo: rgb(109, 0, 199);
+  --alt-text: #333;
 }
 
 :root:has(#theme:checked) {
@@ -206,7 +207,7 @@ main {
   grid-area: 2/2/-1/-1;
   display: grid;
   grid-template-columns: 1fr 23rem;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 28rem 1fr;
 }
 
 .projects {
@@ -292,6 +293,42 @@ main {
 .announcements {
   margin-top: 1.6rem;
   margin-right: 1.5rem;
+}
+
+.trending {
+  margin-top: 1.6rem;
+  margin-right: 1.5rem;
+}
+
+.trend-area {
+  background-color: var(--secondary);
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.trending-user {
+  margin: 1rem 0rem;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0rem 1rem;
+
+  img {
+    grid-row: 1/-1;
+  }
+}
+
+.trend-user-tag {
+  align-self: end;
+}
+
+.trend-action {
+  color: var(--alt-text);
+}
+
+.trending > .main-title {
+  margin-top: 0px;
 }
 
 /* custom slider toggle found online ;) */
