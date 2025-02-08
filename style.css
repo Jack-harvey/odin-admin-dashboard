@@ -7,7 +7,7 @@
   --primary: #4088bf;
   --secondary: #90c3ea;
   --accent: #45a7f2;
-  --status-demo: rgb(109, 0, 199);
+  --status-demo: rgb(223, 119, 0);
   --alt-text: #333;
 }
 
@@ -250,6 +250,7 @@ main {
   }
   p {
     margin: 0.2rem 1rem 0rem 1rem;
+    color: var(--alt-text);
   }
 }
 .proj-icons {
@@ -282,6 +283,7 @@ main {
   p {
     font-size: 0.85rem;
     margin: 0.2rem 0rem 0rem 0rem;
+    color: var(--alt-text);
   }
 }
 
@@ -329,6 +331,10 @@ main {
 
 .trending > .main-title {
   margin-top: 0px;
+}
+
+.lol:hover {
+  color: green;
 }
 
 /* custom slider toggle found online ;) */
